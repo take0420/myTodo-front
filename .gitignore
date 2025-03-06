@@ -32,6 +32,11 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
 
 # vercel
 .vercel
@@ -39,3 +44,30 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS / Editor Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Docker
+/docker-compose.override.yml
+/docker-compose.debug.yml
+/docker-compose.prod.yml
+.dockerignore
